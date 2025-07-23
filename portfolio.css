@@ -1,6 +1,4 @@
 /* styles.css */
-
-/* Root Variables for Theming */
 :root {
   --bg-light: #f8f9fa;
   --bg-dark: #121212;
@@ -11,7 +9,6 @@
   --transition: 0.3s ease;
 }
 
-/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -144,12 +141,23 @@ section {
 }
 
 .about-img img {
-  width: 200px;
+  width: 250px;
   border-radius: 50%;
 }
 
+@media (min-width: 768px) {
+  .about-img {
+    padding-left: 70px;
+}
+
+
 .about-text {
   max-width: 600px;
+}
+@media (min-width: 768px) {
+  .about-text {
+    padding-right: 80px; 
+  }
 }
 
 /* Projects Section */
