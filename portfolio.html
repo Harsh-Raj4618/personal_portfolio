@@ -1,0 +1,233 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Your Name</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header id="navbar" class="navbar">
+    <nav>
+      <div class="logo"><b>&lt/Harsh Raj&gt</b></div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle">🌚</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>&lt/Harsh Raj&gt</span></h1>
+      <h2>A Creative <span id="typed"></span></h2>
+      <a href="#projects" class="cta-button">View My Work</a>
+    </div>
+    <div id="hero-bg"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about" data-aos="fade-up">
+    <div class="about-container">
+      <div class="about-img" data-aos="fade-right">
+        <img src="your-photo.jpg" alt="Your Photo">
+      </div>
+      <div class="about-text" data-aos="fade-left">
+        <h2>&lt/About Me&gt</h2>
+        <p>I'm on an exciting journey to become a well-rounded tech professional. My current focus areas include
+          mastering Web Development to create impactful digital products, sharpening my logic through Data Structures
+          and Algorithms, and unlocking the power of data with Machine Learning.</p>
+        <br>
+        <p>I'm a quick learner, constantly seeking new challenges, and excited to apply my growing skills to real-world
+          projects. Let's connect and explore the future of tech together!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section" data-aos="fade-up">
+    <div class="container">
+      <h2>&lt/Projects&gt</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="card-content">
+            <img src="project1.jpg" alt="Project Screenshot">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive and interactive portfolio built with HTML, CSS, and JavaScript. It highlights my projects,
+              skills, and contact info with a clean design and smooth user experience.</p>
+            <span class="tags">HTML | CSS | JS</span>
+            <div class="card-links">
+              <a href="#" class="btn small">Live Demo</a>
+              <a href="https://github.com/Harsh-Raj4618/personal_portfolio.git" class="btn small">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-content">
+            <img src="project1.jpg" alt="Project Screenshot">
+            <h3>Blog CMS</h3>
+            <p>A full-stack content management system using Node.js and MongoDB. Includes user login, markdown editing,
+              and live previews.</p>
+            <span class="tags">Node.js | MongoDB | Express</span>
+            <div class="card-links">
+              <a href="#" class="btn small">Live Demo</a>
+              <a href="#" class="btn small">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-content">
+            <img src="project1.jpg" alt="Project Screenshot">
+            <h3>Weather App</h3>
+            <p>Fetches real-time weather data from OpenWeatherMap API and shows weather for user-selected cities with
+              animated icons.</p>
+            <span class="tags">JS | API | Bootstrap</span>
+            <div class="card-links">
+              <a href="#" class="btn small">Live Demo</a>
+              <a href="#" class="btn small">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section" data-aos="fade-up">
+    <div class="container">
+      <h2>&lt;/Skills&gt;</h2>
+
+      <div class="skills-grid">
+        <!-- Languages Card -->
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-bar" data-percent="85">
+            <span>HTML</span>
+            <div class="bar-bg">
+              <div class="bar-fill">
+                <span class="bar-percent">85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar" data-percent="65">
+            <span>CSS</span>
+            <div class="bar-bg">
+              <div class="bar-fill">
+                <span class="bar-percent">65%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar" data-percent="30">
+            <span>JavaScript</span>
+            <div class="bar-bg">
+              <div class="bar-fill">
+                <span class="bar-percent">30%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Framework Card -->
+        <div class="skill-category">
+          <h3>Framework</h3>
+          <div class="skill-bar" data-percent="20">
+            <span>React.js</span>
+            <div class="bar-bg">
+              <div class="bar-fill">
+                <span class="bar-percent">20%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar" data-percent="20">
+            <span>Node.js</span>
+            <div class="bar-bg">
+              <div class="bar-fill">
+                <span class="bar-percent">20%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools Card -->
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <div class="skill-bar" data-percent="70">
+            <span>VS Code</span>
+            <div class="bar-bg">
+              <div class="bar-fill">
+                <span class="bar-percent">70%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar" data-percent="60">
+            <span>Git</span>
+            <div class="bar-bg">
+              <div class="bar-fill">
+                <span class="bar-percent">60%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2 style="text-align: center;">Contact Me</h2>
+    <form action="https://formsubmit.co/raj.harsh4618@gmail.com" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" placeholder="Message" required></textarea>
+
+      <!-- Optional: Redirect after submit -->
+      <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+
+      <!-- Optional: Prevent spam -->
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="socials">
+      <a href="https://github.com/Harsh-Raj4618" target="_blank"><img
+          src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
+      <a href="https://www.linkedin.com/in/harsh-raj-102220374" target="_blank"><img
+          src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+      <a href="https://instagram.com/raj_harsh4618" target="_blank"><img
+          src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+      <!-- <a href="https://twitter.com/yourusername" target="_blank"><img
+          src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> &ltHarsh Raj&gt. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="portfolio.js"></script>
+
+</body>
+
+</html>
