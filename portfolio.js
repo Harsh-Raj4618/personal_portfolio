@@ -1,9 +1,36 @@
 // Initialize AOS (Animate on Scroll)
 AOS.init({
   duration: 1000,
-  once: true
+  once: false, 
+  mirror: true,
 });
 
+// Header section scroll up effect
+document.addEventListener('DOMContentLoaded', function () {
+  const navbar = document.getElementById('navbar');
+  const aboutSection = document.getElementById('about');
+  let lastScrollTop = 0;
+
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navbar.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(aboutSection);
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop && currentScroll > 50) {
+      navbar.style.transform = 'translateY(-100%)';
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  });
+});
 // Typed.js for Hero Job Title
 const typed = new Typed('#typed', {
   strings: ["Web Developer", "Creative Coder"],
