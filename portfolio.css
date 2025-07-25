@@ -45,7 +45,8 @@ section {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   box-shadow: none;
-  transition: box-shadow var(--transition), background-color var(--transition);
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
   z-index: 1000;
 }
 
